@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core' do |ss|
-    ss.preserve_paths = 'build/ios/*.a'
     ss.vendored_libraries = 'build/ios/*.a'
     ss.exclude_files = 'swift/Sources/Generated/WalletCore.h'
     ss.source_files =
